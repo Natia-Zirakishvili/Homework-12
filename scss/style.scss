@@ -1,0 +1,78 @@
+@import 'reset';
+@import 'variables';
+@import 'private';
+body {
+    background-image: url(https://vectors.pro/wp-content/uploads/2018/04/coca-cola-logo-vector-transparent.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    .header {
+        @extend %width;
+        @extend %flex;
+        background-color: red;
+        img {
+            width: 100px;
+        }
+        .nav{
+            .nav-ul {
+                @extend %flex;
+                .nav-li {
+                    margin-right: 20px;
+                    a {
+                        font-size: $size2;
+                        text-transform: uppercase;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+    .img {
+        @extend %width;
+        img {
+            @extend %width;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            opacity: 0.9;
+        }
+    }
+
+    .section {
+        @extend %width;
+        @extend %flex;
+        justify-content: space-around;
+        .box1 {
+            margin-top: 50px;
+            border: 2px solid red;
+            padding: 30px;
+            h1 {
+                font-size: 40px;
+                margin: 20px 30px;
+                font-weight: bold;
+            }
+            img {
+                width: 400px;
+            }
+            p {
+                width: 500px;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .footer {
+        @extend %width;
+        margin-top: 50px;
+        img {
+            width: 100px;
+            float:right;
+            margin-right: 10px;
+        }
+        .clear {
+            content: '';
+            clear: both;
+            display: block;
+        }
+    }
+}

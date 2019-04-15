@@ -1,0 +1,107 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  text-decoration: none; }
+
+* {
+  box-sizing: border-box; }
+
+body .header, body .img, body .img img, body .section, body .footer {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto; }
+
+body .header, body .header .nav .nav-ul, body .section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+body {
+  background-image: url(https://vectors.pro/wp-content/uploads/2018/04/coca-cola-logo-vector-transparent.png);
+  background-repeat: no-repeat;
+  background-position: center; }
+  body .header {
+    background-color: red; }
+    body .header img {
+      width: 100px; }
+    body .header .nav .nav-ul .nav-li {
+      margin-right: 20px; }
+      body .header .nav .nav-ul .nav-li a {
+        font-size: 30px;
+        text-transform: uppercase;
+        color: white; }
+  body .img img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    opacity: 0.9; }
+  body .section {
+    justify-content: space-around; }
+    body .section .box1 {
+      margin-top: 50px;
+      border: 2px solid red;
+      padding: 30px; }
+      body .section .box1 h1 {
+        font-size: 40px;
+        margin: 20px 30px;
+        font-weight: bold; }
+      body .section .box1 img {
+        width: 400px; }
+      body .section .box1 p {
+        width: 500px;
+        margin-top: 10px; }
+  body .footer {
+    margin-top: 50px; }
+    body .footer img {
+      width: 100px;
+      float: right;
+      margin-right: 10px; }
+    body .footer .clear {
+      content: '';
+      clear: both;
+      display: block; }
